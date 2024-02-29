@@ -1,0 +1,125 @@
+body {
+    background-image: url('img/fondo-enigma.jpg'); 
+    background-size: 400px;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    background-color: #7ccad1; 
+}
+
+.caja {
+    width: 1400px;
+    margin: 5px auto; 
+    background-color: #9fb2cf; 
+    padding: 15px; 
+    border-radius: 50px 50% 50% 50px;
+}
+
+nav {
+    position: absolute;
+    top: 145px;
+    right: 40px;
+}
+
+nav li {
+    display: inline;
+    margin: 200px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 1100px; 
+    height: 250px;
+    box-sizing: border-box; 
+    resize: none; 
+}
+
+#textoEntrada, #textoSalida {
+    font-size: 25px;
+    max-width: 800px; 
+    max-height: 300px; 
+}
+
+#mensajeCopiado {
+    max-width: 300px;
+    font-size: 18px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #3ba4c4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#mensajeCopiado.mostrar {
+    opacity: 1;
+}
+
+.botones {
+    flex: 10px 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px 25px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #5884d6;
+    transform: scale(1.1); /* Ajusta el factor de escala según tu preferencia */
+}
+
+button:active {
+    background-color: #b8c8e7;
+}
+
+footer {
+    background-color: #9fb2cf;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor2 {
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.imagenFooter {
+    margin-right: 40px; /* Margen derecho entre la imagen y el texto */
+}
+
+.imagenFooter img {
+    max-height: 214px; /* Ajusta la altura máxima de la imagen */
+}
+
+.copyright {
+    font-size: 16px; /* Reduzco el tamaño del texto para un ajuste más adecuado */
+    font-weight: bold;
+    color: #113341;
+    margin: 10px 0; /* Añado un margen superior e inferior al texto */
+}

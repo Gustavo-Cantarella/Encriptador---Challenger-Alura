@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="img/Hombre-misterioso.png"></h1>
+            <nav>
+                <ul class="titulosMenu">
+                    <li>Encriptador y Desencriptador - Challenger</li>
+                </ul>
+            </nav> 
+        </div>       
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="entrada">
+                <textarea id="textoEntrada" placeholder="Texto a encriptar..." rows="10"></textarea>
+            </div>
+            <div class="botones">
+                <button onclick="encriptarTexto()">Encriptar</button>
+                <button onclick="desencriptarTexto()">Desencriptar</button>
+                <button onclick="copiarTexto()">Copiar</button>
+                <button onclick="limpiarCampos()">Limpiar Campo</button>
+            </div>
+            <div class="salida">
+                <textarea id="textoSalida" placeholder="Resultado..." rows="10" readonly></textarea>
+            </div>
+            <div class="mensajeCopiado" id="mensajeCopiado"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenedor2">
+            <div class="imagenFooter">
+                <img src="img/Hombre-misterioso-Blanco.png">
+                <p class="copyright">&copy; Copyright - Gustavo Martin Cantarella, Challenger encriptador para Alura</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
+
