@@ -9,7 +9,7 @@ body {
 }
 
 .caja {
-    width: 1400px;
+    max-width: 100%;
     margin: 5px auto; 
     background-color: #9fb2cf; 
     padding: 15px; 
@@ -90,7 +90,7 @@ button {
 
 button:hover {
     background-color: #5884d6;
-    transform: scale(1.1); /* Ajusta el factor de escala según tu preferencia */
+    transform: scale(1.1);
 }
 
 button:active {
@@ -105,21 +105,21 @@ footer {
 
 .contenedor2 {
     width: 100%;
-    margin: 0 auto; /* Centra horizontalmente */
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    margin: 0 auto; 
+    align-items: center; 
 }
 
 .imagenFooter {
-    margin-right: 40px; /* Margen derecho entre la imagen y el texto */
+    margin-right: 40px; 
 }
 
 .imagenFooter img {
-    max-height: 214px; /* Ajusta la altura máxima de la imagen */
+    max-height: 214px; 
 }
 
 .copyright {
-    font-size: 16px; /* Reduzco el tamaño del texto para un ajuste más adecuado */
+    font-size: 16px; 
     font-weight: bold;
     color: #113341;
-    margin: 10px 0; /* Añado un margen superior e inferior al texto */
+    margin: 10px 0; 
 }
