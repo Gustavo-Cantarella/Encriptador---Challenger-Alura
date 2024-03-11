@@ -6,13 +6,13 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    background-color: #7ccad1; 
+    background-color: #7ccad1;
+    gap: 20px; 
 }
 
 header{
     display: flex;
     justify-content: space-around;
-    width: 100%;
     padding: 20px;
 }
 
@@ -32,34 +32,24 @@ header{
     font-size: 40px;
 }
 
-nav {
-    position: absolute;
-    top: 16%;
-    right: 2%;
-}
-
-nav li {
-    display: inline;
-    margin: 200px;
-    font-weight: bold;
-    font-size: 60px;
-}
-
 .contenedor {
     display: flex;
     justify-content: space-around;
-    margin-top: 5%;
     width: 100%;
 }
 
-.entrada .salida{
-    width: 100%;
+.entrada, .salida{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    padding: 1%;
 }
 
 #textoEntrada, #textoSalida {
     font-size: 25px;
     width: 100%; 
     height: 300px; 
+    resize: none;
 }
 
 #mensajeCopiado {
@@ -119,6 +109,10 @@ footer {
     width: 100%;
     margin: 0 auto; 
     align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .imagenFooter {
@@ -136,6 +130,35 @@ footer {
     margin: 10px 0; 
 }
 
-/* @media screen (max-width: 1440px) {
-    
-} */
+@media (max-width: 1100px) {
+    .titulo h1{
+        font-size: 20px;
+    }
+
+    .imagen{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+
+    .imagen img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .imagenFooter{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+
+    .imagenFooter img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+} 
