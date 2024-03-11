@@ -7,12 +7,13 @@ function encriptar(texto) {
 }
 
 function desencriptar(texto) {
-    return texto.replace(/enter/g, "e")
+    return texto.replace(/ai/g, "a")
+                .replace(/enter/g, "e")
                 .replace(/imes/g, "i")
-                .replace(/ai/g, "a")
                 .replace(/ober/g, "o")
                 .replace(/ufat/g, "u");
 }
+
 
 function encriptarTexto() {
     let textoOriginal = document.getElementById('textoEntrada').value;
